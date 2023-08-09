@@ -152,8 +152,8 @@ class BernPool(torch.nn.Module):
         pool_x_clustering = torch.matmul(sample_matrix_adj, x)
 
         # Bernoulli Node Dropping
-        sample_matrix_diag = torch.diag(bern_mask)
-        pool_x_dropping = torch.mm(sample_matrix_diag[mask_index], x)
+        bern_index = self.mask_to_index(bern_mask)
+        pool_x_dropping = x[bern_index]
 
         # Hybrid learning
         pool_x = pool_x_dropping + pool_x_clustering
@@ -161,6 +161,7 @@ class BernPool(torch.nn.Module):
 
         pool_edge_index, pool_edge_attr = filter_adj(edge_index, edge_attr, mask_index, num_nodes=x.size(0))
 
+        torch.cuda.empty_cache()
         return pool_x, pool_edge_index, pool_edge_attr, pool_batch, mask_index
 
 
