@@ -1,15 +1,16 @@
 # BernPool
 
-PyTorch implementation of Graph Bernoulli Pooling 
+PyTorch implementation of Graph Bernoulli Pooling.
 
-
+![architecture](/fig/architecture.png)
 
 ## Requirements
 
-* pytorch = 1.11.0+cu113
+* torch = 1.11.0+cu113
+* torch-scatter = 2.0.9
+* torch-sparse = 0.6.15
+* torch-geometric = 2.0.4
 
-
-Or type `pip install -r requirements.txt` to automatically install the environment. 
 
 ## Run
 
