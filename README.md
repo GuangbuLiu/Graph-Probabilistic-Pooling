@@ -14,6 +14,7 @@ PyTorch implementation of Graph Bernoulli Pooling.
 
 ## Run
 If you want to run the experiments on the PROTEINS, DD, NCI1, ENZYMES, Mutagenicity, IMDB-BINARY, IMDB-MULTI, COLLAB, and REDDIT-MULTI-12K datasets, please type the following command:
+
 `python main.py` 
 
 If you want to run the experiments on the ogbg-ppa dataset, please enter the ogbg-ppa file folder and then type the following command:
