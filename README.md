@@ -1,4 +1,4 @@
-# BernPool
+# Graph Probabilistic Pooling
 
 PyTorch implementation of Graph Bernoulli Pooling.
 
