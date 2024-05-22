@@ -1,6 +1,6 @@
 # Graph Probabilistic Pooling
 
-PyTorch implementation of Graph Bernoulli Pooling.
+PyTorch implementation of Graph Probabilistic Pooling.
 
 ![architecture](/fig/architecture.png)
 
