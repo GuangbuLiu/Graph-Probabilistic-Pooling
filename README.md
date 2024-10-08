@@ -1,4 +1,4 @@
-# Graph Probabilistic Pooling2
+# Graph Probabilistic Pooling
 
 PyTorch implementation of Graph Probabilistic Pooling.
 
